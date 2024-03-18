@@ -1,5 +1,7 @@
 package main
 
+import "goRedis/tcp"
+
 var banner = `
    ______          ___
   / ____/___  ____/ (_)____
@@ -10,4 +12,5 @@ var banner = `
 
 func main() {
 	print(banner)
+	tcp.ListenAndServeDemo(":8000")
 }
